@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+.screen{
+    width: 327px    ;
+    height: 556px;
+    top: 128px;
+    left: 24px;
+    gap: 0px;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #363636;
+    display: flex; 
+    justify-content: center; 
+    justify-items: center;
+
+}
+
+.text{
+    text-align: center;
+    color: white;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24.08px;
+
+}
+
+.background{
+    background-color: white;
+}
