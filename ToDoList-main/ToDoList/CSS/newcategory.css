@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#tela{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.header{ 
+    color: white;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    width: 177px;
+
+}
+
+.addText p{
+    color: white ;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    opacity: 80%;
+
+}
+
+.addText{
+    padding-left: 1px;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.textinputo{
+    margin-left: 20px;
+
+}
+
+input{
+    background-color:#1D1D1D;
+    width: 80%;
+    height: Hug (48px)px;
+    top: 146px;
+    left: 24px;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 4px 4px 4px 4px;
+    border: 0.8px 0.8px 0.8px 0.8px;
+    opacity: 0px;
+    border-color: white;
+    border-width: 0.8px;
+    color: white ;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    opacity: 80%;
+}
+
+.libraryCate p{
+    color: white ;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    opacity: 80%;
+}
+
+.libraryCate>button{
+    background-color: #121212;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 170px;
+    height: 50px;
+}
+
+.colorCate p{
+    color: white ;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    opacity: 80%;
+}
+
+.colorsEclipse{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+.colors{
+    display: flex;
+    justify-content: center;
+}
+
+.colorsEclipse>button{
+    background-color: #121212;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border-color: white;
+    border: none;
+}
+
+.buttonsfooter{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+.buttonsfooter>button{
+    background-color: #121212;
+    border: none;
+}
+
+.bttn{
+    display: inline-block;
+    justify-content: space-between;
+    
+}
+

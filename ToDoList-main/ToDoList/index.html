@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/modalTask.css">
+    <link rel="stylesheet" href="CSS/category.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="statusbar">
+            <img src="imgs/iPhone X (or newer).png" alt="">
+        </div>
+        <div class="indexbar">
+            <img src="imgs/Group 172.png" alt="">
+        </div>
+        <div class="indexinf">
+            <div class="infos">
+                <img class="check" src="imgs/Checklist-rafiki 1.png" alt="">
+                <p class="info1">What do you want to do today?</p>
+                <p class="info2">Tap + to add your tasks</p>
+            </div>
+        </div>
+
+        <div class="navBar">
+
+            <img class="indexIcon" src="imgs/Navbarra/Group 167.png" alt="">
+            <img src="imgs/Navbarra/Group 168.png" alt="" class="calendar">
+            <div class="btnplus">
+                <a href="#" id="plus" class="plus">
+                    <img class="elipse" src="imgs/Navbarra/add/Ellipse 14.png" alt="">
+                    <img src="imgs/Navbarra/add/add.png" alt="" class="add">
+                </a>
+            </div>
+            <img src="imgs/Navbarra/Group 169.png" alt="" class="focuse">
+            <img src="imgs/Navbarra/Group 170.png" alt="" class="profile">
+
+        </div>
+    </div>
+
+    <!-- Modal principal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Add Task</p>
+            <input type="text" id="texto" name="texto" placeholder="Do math homework">
+            <p class="desc">Description</p>
+            <div class="outlines">
+                <img src="imgs/taskscreen/timer.png" alt="">
+                <!-- Botão para abrir o segundo modal -->
+                <button onclick="openCategoryModal()"><img src="imgs/taskscreen/tag.png" alt="category"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal secundário -->
+    <div id="tagModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCategoryModal()">&times;</span>
+            
+            <section id="categoryscreen">
+                <section class="categoryhead">
+                    <p>Category Screen</p>
+                    <img src="imgs/Categories screen/Divider.png" alt="divider">
+                </section>
+                <section class="category">
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 267.png" alt="c1">
+                        </button>
+                        <div class="inf2">
+                            <p>Grocery</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 268.png" alt="c2">
+                        </button>
+                        <div class="inf2">
+                            <p>Work</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 269.png" alt="c3">
+                        </button>
+                        <div class="inf2">
+                            <p>Sport</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 270.png" alt="c4">
+                        </button>
+                        <div class="inf2">
+                            <p>Design</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 271.png" alt="c5">
+                        </button>
+                        <div class="inf2">
+                            <p>Univeristy</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 272.png" alt="c6">
+                        </button>
+                        <div class="inf2">
+                            <p>Social</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 273.png" alt="c7">
+                        </button>
+                        <div class="inf2">
+                            <p>Music</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 274.png" alt="c8">
+                        </button>
+                        <div class="inf2">
+                            <p>Health</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 275.png" alt="c9">
+                        </button>
+                        <div class="inf2">
+                            <p>Movie</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button>
+                            <img src="imgs/Categories screen/Group 276.png" alt="c10">
+                        </button>
+                        <div class="inf2">
+                            <p>Home</p>
+                        </div>
+                    </section>
+                    <section class="imgs">
+                        <div class="inf1"></div>
+                        <button id="buttonCriar" onclick="document.location='newcategory.html'">
+                            <img src="imgs/Categories screen/Group 277.png" alt="c11">
+                        </button>
+                        <div class="inf2">
+                            <p>Create New</p>
+                        </div>
+                    </section>    
+            </section>
+            <div class="Add">
+                <button>
+                    <img src="imgs/Categories screen/Add Category Button.png" alt="add">
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Modal terciário -->
+    <div id="thirdModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeThirdModal()">&times;</span>
+            <section id="taskscreen">
+                <section class="taskhead">
+                    <p>Task Priority</p>
+                    <img src="imgs/Categories screen/Divider.png" alt="divider">
+                </section>
+                <section class="task">
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 228.png"c1">
+                        </button>
+                    </div>
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 229.png"c1">
+                        </button>
+                    </div>
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 230.png"c1">
+                        </button>
+                    </div>
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 231.png"c1">
+                        </button>
+                    </div>
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 232.png"c1">
+                        </button>
+                    </div>
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 233.png"c1">
+                        </button>
+                    </div>
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 234.png"c1">
+                        </button>
+                    </div>
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 235.png"c1">
+                        </button>
+                    </div>
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 236.png"c1">
+                        </button>
+                    </div>
+                    <div class="imgs">
+                        <button>
+                            <img src="imgs/Home Screen/Add Task/Group 237.png"c1">
+                        </button>
+                    </div> 
+            </section>
+            <div class="buttonsfooter">
+                <button ><img src="imgs/Home Screen/Add Task/Cancel Button.png" alt="cancel"></button>
+                <button><img src="imgs/Home Screen/Add Task/Delete Button.png" alt="create"></button>
+        </div>
+            <p>Este é o terceiro modal</p>
+        </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+
+    <script>
+        // Função para abrir o modal principal
+        function openModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        // Função para fechar o modal principal
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Função para abrir o modal secundário
+        function openCategoryModal() {
+            document.getElementById('tagModal').style.display = 'block';
+        }
+
+        // Função para fechar o modal secundário
+        function closeCategoryModal() {
+            document.getElementById('tagModal').style.display = 'none';
+        }
+
+        // Função para abrir o terceiro modal
+        function openThirdModal() {
+            document.getElementById('thirdModal').style.display = 'block';
+        }
+
+        // Função para fechar o terceiro modal
+        function closeThirdModal() {
+            document.getElementById('thirdModal').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
