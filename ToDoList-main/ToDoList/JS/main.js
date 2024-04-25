@@ -27,6 +27,3 @@ linkcategoryModal.onclick = function() {
     categorymodal.category.display = "block";
   }
 
-  
-
- 
