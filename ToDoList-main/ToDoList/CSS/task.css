@@ -1,101 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
- 
- body{
-    
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-
-}
-
-#taskscreen {
-    width: 327px;
-    top: 128px;
-    left: 24px;
+.container {
+    max-width: 375px;
+    height: 912px;
+    top: -3118px;
+    left: -4070px;
     gap: 0px;
-    border-radius: 4px 0px 0px 0px;
     opacity: 0px;
-    background-color: #363636;
-    
+    background-color: #121212;
 
 }
-    
-.taskhead{
-    font-family: Lato;
-    color: white;
-    padding-top: 12px;
+
+input{
+    width: Fixed (327px)px;
+    height: Hug (48px)px;
+    top: 114px;
+    left: 24px;
+    padding: 12px 0px 0px 0px;
+    gap: 12px;
+    border-radius: 4px 0px 0px 0px;
+    border: 0.8px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #1D1D1D;
+    ;
+
+}
+
+
+.statusbar {
+    max-width: 375px;
+    height: 44px;
+}
+
+
+.indexbar {
+    margin-left: 20px;
+    width: 327px;
+    height: 42px;
+    top: 57px;
+    left: 24px;
+    opacity: 0px;
+}
+
+.indexinf {
+    padding-top: 180px;
+    padding-bottom: 230px;
+}
+
+.infos {
     text-align: center;
-    
-}
-
-.taskhead p{
-    margin: 0px
-}
-
-.imgs{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    margin: 2px;
-    
-    
-}
-
-.task{
-   padding: 10px;
-   font-family: Lato;
     color: white;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    max-width: 337px;
-    margin-left: 17px;
+    font-family: Lato
 }
 
-.Add{
-   justify-content: center;
-    display: flex;
-    padding: 10px;
-    margin-left: 5px;
+.navBar {
+    max-width: auto;
+    height: 80px;
+    margin-top: 30px;
+    opacity: 0px;
+    background-color:#363636;
+ 
+
 }
 
-
-button{
-    background-color: #363636;
-    border: none;
-
-    
-}
-
-.overlay {
-    position: fixed;
+.indexIcon,
+.calendar,
+.focuse,
+.profile {
+    width: 48px;
+    height: 50px;
+    top: 36px;
+    left: 20px;
+    position: relative;
+    display: inline-block;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
 }
 
-.modal {
-    
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.indexIcon {
+   margin-left: 14px;
+   z-index: 1px;
 }
 
-.fechar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+.calendar {
+    margin-left: 23px;
+    z-index: 2px;
 }
 
+.focuse {
+    margin-left: 33px;
+    z-index: 3px;
+}
 
+.profile {
+    margin-left: 20px;
+    z-index: 4px;
+}
+
+.btnplus{
+    width: 64px;
+    height: 64px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.elipse {
+    width: 64px;
+    height: 64px;
+    margin-top: -9px;
+    margin-left: 15px;
+}
+
+.add {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 15px;
+    margin-left: -47.7px;
+
+}
 
