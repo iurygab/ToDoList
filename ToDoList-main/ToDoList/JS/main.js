@@ -1,60 +1,68 @@
-// Obtém referências para o modal e o link de abertura
+// Obtém referências para o modal e o link de abertura do modal principal
 var modal = document.getElementById("myModal");
 var linkAbrirModal = document.getElementById("plus");
 
-// Quando o link é clicado, mostra o modal
-linkAbrirModal.onclick = function() {
+// Quando o link é clicado, mostra o modal principal
+linkAbrirModal.onclick = function(event) {
+  event.preventDefault(); // Evita o comportamento padrão do link
   modal.style.display = "block";
 }
 
-// Quando o usuário clica no botão de fechar, fecha o modal
+// Quando o usuário clica no botão de fechar do modal principal, fecha o modal
 modal.getElementsByClassName("close")[0].onclick = function() {
   modal.style.display = "none";
 }
 
-// Fecha o modal se o usuário clicar fora dele
+// Fecha o modal principal se o usuário clicar fora dele
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
 
-//category
+// Obtém referências para o modal secundário e o link de abertura do modal secundário
 var categorymodal = document.getElementById("tagModal");
 var linkcategoryModal = document.getElementById("tag");
 
-linkcategoryModal.onclick = function() {
-    categorymodal.category.display = "block";
+// Quando o link é clicado, mostra o modal secundário
+linkcategoryModal.onclick = function(event) {
+  event.preventDefault(); // Evita o comportamento padrão do link
+  categorymodal.style.display = "block";
+}
+
+// Quando o usuário clica no botão de fechar do modal secundário, fecha o modal secundário
+categorymodal.getElementsByClassName("close")[0].onclick = function() {
+  categorymodal.style.display = "none";
+}
+
+// Fecha o modal secundário se o usuário clicar fora dele
+window.onclick = function(event) {
+  if (event.target == categorymodal) {
+    categorymodal.style.display = "none";
   }
+}
 
-  // Função para abrir o modal principal
-  function openModal() {
-      document.getElementById('myModal').style.display = 'block';
-  }
+// Funções para abrir e fechar o modal principal e o modal terciário permanecem as mesmas
+function openModal() {
+  document.getElementById('myModal').style.display = 'block';
+}
 
-  // Função para fechar o modal principal
-  function closeModal() {
-      document.getElementById('myModal').style.display = 'none';
-  }
+function closeModal() {
+  document.getElementById('myModal').style.display = 'none';
+}
 
-  // Função para abrir o modal secundário
-  function openCategoryModal() {
-      document.getElementById('tagModal').style.display = 'block';
-  }
+function openCategoryModal() {
+  document.getElementById('tagModal').style.display = 'block';
+}
 
-  // Função para fechar o modal secundário
-  function closeCategoryModal() {
-      document.getElementById('tagModal').style.display = 'none';
-  }
+function closeCategoryModal() {
+  document.getElementById('tagModal').style.display = 'none';
+}
 
-  // Função para abrir o terceiro modal
-  function openThirdModal() {
-      document.getElementById('thirdModal').style.display = 'block';
-  }
+function openThirdModal() {
+  document.getElementById('thirdModal').style.display = 'block';
+}
 
-  // Função para fechar o terceiro modal
-  function closeThirdModal() {
-      document.getElementById('thirdModal').style.display = 'none';
-  }
-
-
+function closeThirdModal() {
+  document.getElementById('thirdModal').style.display = 'none';
+}

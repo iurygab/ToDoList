@@ -86,7 +86,7 @@ button{
 .modal {
     
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -96,6 +96,7 @@ button{
     right: 10px;
     cursor: pointer;
 }
-
-
+.send{
+    margin-left: 220px;
+}
 
