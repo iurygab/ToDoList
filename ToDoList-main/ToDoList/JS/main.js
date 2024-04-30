@@ -27,6 +27,34 @@ linkcategoryModal.onclick = function() {
     categorymodal.category.display = "block";
   }
 
-  
+  // Função para abrir o modal principal
+  function openModal() {
+      document.getElementById('myModal').style.display = 'block';
+  }
 
- 
+  // Função para fechar o modal principal
+  function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+  }
+
+  // Função para abrir o modal secundário
+  function openCategoryModal() {
+      document.getElementById('tagModal').style.display = 'block';
+  }
+
+  // Função para fechar o modal secundário
+  function closeCategoryModal() {
+      document.getElementById('tagModal').style.display = 'none';
+  }
+
+  // Função para abrir o terceiro modal
+  function openThirdModal() {
+      document.getElementById('thirdModal').style.display = 'block';
+  }
+
+  // Função para fechar o terceiro modal
+  function closeThirdModal() {
+      document.getElementById('thirdModal').style.display = 'none';
+  }
+
+

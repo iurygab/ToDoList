@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/modalTask.css">
     <link rel="stylesheet" href="CSS/category.css">
+    <link rel="stylesheet" href="CSS/addtask.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
@@ -50,11 +51,14 @@
             <p>Add Task</p>
             <input type="text" id="texto" name="texto" placeholder="Do math homework">
             <p class="desc">Description</p>
+            
             <div class="outlines">
                 <img src="imgs/taskscreen/timer.png" alt="">
                 <!-- Botão para abrir o segundo modal -->
                 <button onclick="openCategoryModal()"><img src="imgs/taskscreen/tag.png" alt="category"></button>
-            </div>
+                <button onclick="openThirdModal()"><img src="imgs/taskscreen/flag.png" alt="flag"></button>
+                <img src="imgs/taskscreen/send.png" alt="">
+            </div
         </div>
     </div>
 
@@ -181,7 +185,6 @@
     <!-- Modal terciário -->
     <div id="thirdModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeThirdModal()">&times;</span>
             <section id="taskscreen">
                 <section class="taskhead">
                     <p>Task Priority</p>
@@ -240,46 +243,16 @@
                     </div> 
             </section>
             <div class="buttonsfooter">
-                <button ><img src="imgs/Home Screen/Add Task/Cancel Button.png" alt="cancel"></button>
+                <span class="close" onclick="closeThirdModal()">
+                    <button><img src="imgs/Home Screen/Add Task/Cancel Button.png" alt="cancel"></button>
+                </span>
                 <button><img src="imgs/Home Screen/Add Task/Delete Button.png" alt="create"></button>
         </div>
-            <p>Este é o terceiro modal</p>
         </div>
     </div>
 
-    <script src="JS/main.js"></script>
-
-    <script>
-        // Função para abrir o modal principal
-        function openModal() {
-            document.getElementById('myModal').style.display = 'block';
-        }
-
-        // Função para fechar o modal principal
-        function closeModal() {
-            document.getElementById('myModal').style.display = 'none';
-        }
-
-        // Função para abrir o modal secundário
-        function openCategoryModal() {
-            document.getElementById('tagModal').style.display = 'block';
-        }
-
-        // Função para fechar o modal secundário
-        function closeCategoryModal() {
-            document.getElementById('tagModal').style.display = 'none';
-        }
-
-        // Função para abrir o terceiro modal
-        function openThirdModal() {
-            document.getElementById('thirdModal').style.display = 'block';
-        }
-
-        // Função para fechar o terceiro modal
-        function closeThirdModal() {
-            document.getElementById('thirdModal').style.display = 'none';
-        }
-    </script>
 </body>
+
+<script src="JS/main.js"></script>
 
 </html>
