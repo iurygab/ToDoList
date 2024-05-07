@@ -66,3 +66,27 @@ function openThirdModal() {
 function closeThirdModal() {
   document.getElementById('thirdModal').style.display = 'none';
 }
+
+//adicionar task
+function adicionarInfo() {
+  // Obter o valor da caixa de texto
+  var texto = document.getElementById('texto').value;
+  
+  // Verificar se a caixa de texto está vazia
+  if (texto === '') {
+      alert('Por favor, digite algo na caixa de texto.');
+      return;
+  }
+  
+  // Criar um novo elemento de parágrafo
+  var novoParagrafo = document.createElement('p');
+  
+  // Definir o texto do parágrafo como o valor da caixa de texto
+  novoParagrafo.textContent = texto;
+  
+  // Adicionar o novo parágrafo à div de informações
+  document.getElementById('infoDiv').appendChild(novoParagrafo);
+  
+  // Limpar o conteúdo da caixa de texto
+  document.getElementById('inputBox').value = '';
+}
