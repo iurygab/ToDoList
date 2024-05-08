@@ -29,6 +29,7 @@
 .indexinf {
     padding-top: 180px;
     padding-bottom: 230px;
+    display: block;
 }
 
 .infos {
@@ -36,14 +37,22 @@
     color: white;
     font-family: Lato
 }
+.info {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
 
 .navBar {
     max-width: auto;
     height: 80px;
-    margin-top: 30px;
     opacity: 0px;
     background-color:#363636;
-    ;
 
 }
 

@@ -67,26 +67,13 @@ function closeThirdModal() {
   document.getElementById('thirdModal').style.display = 'none';
 }
 
-//adicionar task
-function adicionarInfo() {
-  // Obter o valor da caixa de texto
-  var texto = document.getElementById('texto').value;
-  
-  // Verificar se a caixa de texto está vazia
-  if (texto === '') {
-      alert('Por favor, digite algo na caixa de texto.');
-      return;
-  }
-  
-  // Criar um novo elemento de parágrafo
-  var novoParagrafo = document.createElement('p');
-  
-  // Definir o texto do parágrafo como o valor da caixa de texto
-  novoParagrafo.textContent = texto;
-  
-  // Adicionar o novo parágrafo à div de informações
-  document.getElementById('infoDiv').appendChild(novoParagrafo);
-  
-  // Limpar o conteúdo da caixa de texto
-  document.getElementById('inputBox').value = '';
+//adicionar texto
+function mostrarTexto() {
+  var texto = document.getElementById("texto").value;
+  var novoElemento = document.createElement("div");
+  novoElemento.className = "info"; // Adiciona a classe "info" à nova div
+  var novoH1 = document.createElement("h1");
+  novoH1.innerText = texto;
+  novoElemento.appendChild(novoH1);
+  document.getElementById("containertask").appendChild(novoElemento);
 }

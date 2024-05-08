@@ -23,12 +23,13 @@
         <div class="indexbar">
             <img src="imgs/Group 172.png" alt="">
         </div>
-        <div class="indexinf">
+        <div class="indexinf" id="divParaOcultar">
             <div class="infos">
                 <img class="check" src="imgs/Checklist-rafiki 1.png" alt="">
                 <p class="info1">What do you want to do today?</p>
                 <p class="info2">Tap + to add your tasks</p>
             </div>
+            <div id="containertask"></div>
         </div>
 
         <div class="navBar">
@@ -52,16 +53,17 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <p>Add Task</p>
-            <input type="text" id="texto" name="texto" placeholder="Do math homework">
+            <input type="text" id="texto" name="texto" placeholder="Do math homework" >
             <p class="desc">Description</p>
 
             <div class="outlines">
                 <img src="imgs/taskscreen/timer.png" alt="">
-                <!-- Botão para abrir o segundo modal -->
                 <button onclick="openCategoryModal()"><img src="imgs/taskscreen/tag.png" alt="category"></button>
                 <button onclick="openThirdModal()"><img src="imgs/taskscreen/flag.png" alt="flag"></button>
-                <img class="send" src="imgs/taskscreen/send.png" alt="">
-            </div 
+                <button onclick="mostrarTexto()">
+                    <img src="imgs/taskscreen/send.png" alt="">
+                </button>
+            </div> 
         </div>
         </div>
 
